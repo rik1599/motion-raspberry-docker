@@ -16,7 +16,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'rik1599-dockerhub'
-    repository: 'motion-raspberry-container'
+    repository: 'rik1599/motion-raspberry-container'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: |
