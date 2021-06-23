@@ -19,3 +19,4 @@ steps:
     repository: 'motion-raspberry-container'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: 'arm64v8-latest'
