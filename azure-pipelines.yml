@@ -15,8 +15,10 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'Docker hub'
+    containerRegistry: 'rik1599-dockerhub'
     repository: 'motion-raspberry-container'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: 'arm64v8-latest'
+    tags: |
+      arm64v8-latest
+      latest
